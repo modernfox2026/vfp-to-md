@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vfp2md"
+version = "1.0.0"
+description = "Convert legacy Visual FoxPro files (forms, classes, reports, menus, projects, databases, tables, programs) to Markdown"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+vfp2md = "vfp2md.cli:main"
+
+[tool.setuptools]
+packages = ["vfp2md", "vfp2md.converters"]
